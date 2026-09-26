@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohayb Store</title>
+  <meta name="description" content="Sohayb Store - productos online">
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#15171c;
+      --muted:#6b7280;
+      --accent:#111827;
+      --accent-2:#25D366;
+      --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+    header{
+      background:linear-gradient(135deg,#111827,#374151);
+      color:#fff;
+      padding:28px 20px;
+      text-align:center;
+    }
+    header h1{margin:0 0 8px;font-size:34px}
+    header p{margin:0;color:#e5e7eb}
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:30px 18px 60px;
+    }
+    .hero{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding:24px;
+      margin-bottom:26px;
+      box-shadow:0 8px 25px rgba(0,0,0,.05);
+    }
+    .hero h2{margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted);line-height:1.6}
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
+    }
+    .product{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,.05);
+      transition:transform .2s ease,box-shadow .2s ease;
+    }
+    .product:hover{
+      transform:translateY(-3px);
+      box-shadow:0 12px 30px rgba(0,0,0,.08);
+    }
+    .product img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#eef0f3;
+    }
+    .product-content{padding:18px}
+    .product h3{margin:0 0 8px;font-size:20px}
+    .product p{
+      margin:0 0 14px;
+      color:var(--muted);
+      line-height:1.5;
+      min-height:46px;
+    }
+    .price{
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    .order-btn{
+      display:block;
+      width:100%;
+      text-align:center;
+      text-decoration:none;
+      color:#fff;
+      background:var(--accent-2);
+      padding:13px 16px;
+      border-radius:12px;
+      font-weight:700;
+    }
+    .order-btn:hover{filter:brightness(.95)}
+    footer{
+      text-align:center;
+      padding:22px 18px;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+    }
+    .note{
+      margin-top:22px;
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      color:#9a3412;
+      padding:14px 16px;
+      border-radius:12px;
+      line-height:1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sohayb Store</h1>
+    <p>Productos online • Pedidos fáciles por WhatsApp</p>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bienvenido 👋</h2>
+      <p>
+        Descubre nuestros productos. Pulsa en “Pedir por WhatsApp” para hacer tu pedido.
+        Puedes cambiar los productos, precios, fotos y número de WhatsApp directamente en este archivo.
+      </p>
+    </section>
+
+    <section class="products">
+
+      <!-- PRODUCTO 1 -->
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80"
+             alt="Reloj">
+        <div class="product-content">
+          <h3>Reloj Casual</h3>
+          <p>Reloj moderno para uso diario.</p>
+          <div class="price">19,99 €</div>
+          <a class="order-btn"
+             href="https://wa.me/34627682654?text=Hola%2C%20quiero%20pedir%20el%20Reloj%20Casual%20de%2019%2C99%20%E2%82%AC."
+             target="_blank" rel="noopener">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 2 -->
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+             alt="Zapatillas">
+        <div class="product-content">
+          <h3>Zapatillas Urban</h3>
+          <p>Diseño cómodo para combinar con tu estilo.</p>
+          <div class="price">29,99 €</div>
+          <a class="order-btn"
+             href="https://wa.me/34627682654?text=Hola%2C%20quiero%20pedir%20las%20Zapatillas%20Urban%20de%2029%2C99%20%E2%82%AC."
+             target="_blank" rel="noopener">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 3 -->
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=900&q=80"
+             alt="Mochila">
+        <div class="product-content">
+          <h3>Mochila City</h3>
+          <p>Mochila práctica para estudios, viajes y uso diario.</p>
+          <div class="price">24,99 €</div>
+          <a class="order-btn"
+             href="https://wa.me/34627682654?text=Hola%2C%20quiero%20pedir%20la%20Mochila%20City%20de%2024%2C99%20%E2%82%AC."
+             target="_blank" rel="noopener">
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <div class="note">
+      <strong>Importante:</strong> Los productos, fotos, precios y número de WhatsApp de arriba son ejemplos.
+      Sustitúyelos por información real antes de publicar la tienda.
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Sohayb Store · Todos los derechos reservados
+  </footer>
+</body>
+</html>
